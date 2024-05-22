@@ -11,6 +11,8 @@
 		A356D1AF2BFE1C7C000AE7FE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A356D1AE2BFE1C7C000AE7FE /* ContentView.swift */; };
 		A356D1B12BFE1C80000AE7FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A356D1B02BFE1C80000AE7FE /* Assets.xcassets */; };
 		A356D1B42BFE1C80000AE7FE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A356D1B32BFE1C80000AE7FE /* Preview Assets.xcassets */; };
+		A356D1BB2BFE1D34000AE7FE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A356D1BA2BFE1D34000AE7FE /* HomeView.swift */; };
+		A356D1BD2BFE1DF9000AE7FE /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A356D1BC2BFE1DF8000AE7FE /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		A356D1AE2BFE1C7C000AE7FE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A356D1B02BFE1C80000AE7FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A356D1B32BFE1C80000AE7FE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A356D1BA2BFE1D34000AE7FE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A356D1BC2BFE1DF8000AE7FE /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,8 @@
 				A356D1AE2BFE1C7C000AE7FE /* ContentView.swift */,
 				A356D1B02BFE1C80000AE7FE /* Assets.xcassets */,
 				A356D1B22BFE1C80000AE7FE /* Preview Content */,
+				A356D1BA2BFE1D34000AE7FE /* HomeView.swift */,
+				A356D1BC2BFE1DF8000AE7FE /* LoginView.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -137,7 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A356D1BB2BFE1D34000AE7FE /* HomeView.swift in Sources */,
 				A356D1AF2BFE1C7C000AE7FE /* ContentView.swift in Sources */,
+				A356D1BD2BFE1DF9000AE7FE /* LoginView.swift in Sources */,
 				A356D1AD2BFE1C7C000AE7FE /* OnboardingApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
