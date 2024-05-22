@@ -24,6 +24,7 @@ struct HomeView: View {
             .buttonStyle(.borderedProminent)
             .controlSize(.large)
         }
+        .padding()
     }
 }
 

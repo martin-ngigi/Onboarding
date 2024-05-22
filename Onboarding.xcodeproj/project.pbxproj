@@ -24,6 +24,10 @@
 		A356D1D12BFE4371000AE7FE /* PrimaryButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A356D1D02BFE4371000AE7FE /* PrimaryButtonModifier.swift */; };
 		A356D1D32BFE43CF000AE7FE /* PrimaryTextModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A356D1D22BFE43CF000AE7FE /* PrimaryTextModifier.swift */; };
 		A356D1D52BFE44FE000AE7FE /* SecondaryButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A356D1D42BFE44FE000AE7FE /* SecondaryButtonModifier.swift */; };
+		A356D1D92BFE68A0000AE7FE /* AgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A356D1D82BFE68A0000AE7FE /* AgeView.swift */; };
+		A356D1DB2BFE6A34000AE7FE /* BioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A356D1DA2BFE6A34000AE7FE /* BioView.swift */; };
+		A356D1DE2BFE6EC3000AE7FE /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A356D1DD2BFE6EC3000AE7FE /* SignupView.swift */; };
+		A356D1E02BFE6FD7000AE7FE /* RegistrationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A356D1DF2BFE6FD7000AE7FE /* RegistrationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +49,10 @@
 		A356D1D02BFE4371000AE7FE /* PrimaryButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonModifier.swift; sourceTree = "<group>"; };
 		A356D1D22BFE43CF000AE7FE /* PrimaryTextModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryTextModifier.swift; sourceTree = "<group>"; };
 		A356D1D42BFE44FE000AE7FE /* SecondaryButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButtonModifier.swift; sourceTree = "<group>"; };
+		A356D1D82BFE68A0000AE7FE /* AgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeView.swift; sourceTree = "<group>"; };
+		A356D1DA2BFE6A34000AE7FE /* BioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioView.swift; sourceTree = "<group>"; };
+		A356D1DD2BFE6EC3000AE7FE /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		A356D1DF2BFE6FD7000AE7FE /* RegistrationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +85,7 @@
 		A356D1AB2BFE1C7C000AE7FE /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				A356D1D72BFE6880000AE7FE /* Signup */,
 				A356D1D62BFE45F2000AE7FE /* Modifiers */,
 				A356D1C42BFE2869000AE7FE /* OnboardingInfoView.swift */,
 				A356D1AC2BFE1C7C000AE7FE /* OnboardingApp.swift */,
@@ -90,7 +99,6 @@
 				A356D1C62BFE2A22000AE7FE /* OnboardingView.swift */,
 				A356D1C82BFE2B4A000AE7FE /* OnboardingManager.swift */,
 				A356D1CA2BFE38D0000AE7FE /* SplashView.swift */,
-				A356D1CC2BFE407B000AE7FE /* UsernameView.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -112,6 +120,18 @@
 				A356D1D42BFE44FE000AE7FE /* SecondaryButtonModifier.swift */,
 			);
 			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		A356D1D72BFE6880000AE7FE /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				A356D1CC2BFE407B000AE7FE /* UsernameView.swift */,
+				A356D1D82BFE68A0000AE7FE /* AgeView.swift */,
+				A356D1DA2BFE6A34000AE7FE /* BioView.swift */,
+				A356D1DD2BFE6EC3000AE7FE /* SignupView.swift */,
+				A356D1DF2BFE6FD7000AE7FE /* RegistrationManager.swift */,
+			);
+			path = Signup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +204,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A356D1DE2BFE6EC3000AE7FE /* SignupView.swift in Sources */,
+				A356D1D92BFE68A0000AE7FE /* AgeView.swift in Sources */,
 				A356D1BB2BFE1D34000AE7FE /* HomeView.swift in Sources */,
 				A356D1C12BFE267B000AE7FE /* MainAppView.swift in Sources */,
 				A356D1D32BFE43CF000AE7FE /* PrimaryTextModifier.swift in Sources */,
@@ -196,9 +218,11 @@
 				A356D1C92BFE2B4A000AE7FE /* OnboardingManager.swift in Sources */,
 				A356D1CB2BFE38D0000AE7FE /* SplashView.swift in Sources */,
 				A356D1D12BFE4371000AE7FE /* PrimaryButtonModifier.swift in Sources */,
+				A356D1E02BFE6FD7000AE7FE /* RegistrationManager.swift in Sources */,
 				A356D1C52BFE2869000AE7FE /* OnboardingInfoView.swift in Sources */,
 				A356D1AD2BFE1C7C000AE7FE /* OnboardingApp.swift in Sources */,
 				A356D1CD2BFE407B000AE7FE /* UsernameView.swift in Sources */,
+				A356D1DB2BFE6A34000AE7FE /* BioView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

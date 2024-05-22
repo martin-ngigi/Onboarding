@@ -21,6 +21,7 @@ struct LoginView: View {
                 password
                 login
             }
+            .padding()
         }
     }
 }
