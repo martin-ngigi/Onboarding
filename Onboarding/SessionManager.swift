@@ -11,6 +11,7 @@ final class SessionManager: ObservableObject {
     
     enum UserDefaultKeys{
         static let hasSessionOnboarding = "hasSessionOnboarding"
+        static let hasCompletedSIgnupFlow = "hasCompletedSIgnupFlow"
     }
     
     enum CurrentState {
@@ -32,6 +33,7 @@ final class SessionManager: ObservableObject {
     
     func register() {
         signIn()
+        UserDefaults.standard.set(true, forKey: UserDefaultKeys.hasCompletedSIgnupFlow)
     }
     
     func completeOnboarding() {
@@ -40,7 +42,13 @@ final class SessionManager: ObservableObject {
     }
     
     func configureCurrentState() {
+        let hasCompletedSIgnupFlow = UserDefaults.standard.bool(forKey: UserDefaultKeys.hasCompletedSIgnupFlow)
         let hasCompletedOnboarding = UserDefaults.standard.bool(forKey: UserDefaultKeys.hasSessionOnboarding)
-        currentState = hasCompletedOnboarding ?  .loggedOut : .onboarding
+        if hasCompletedSIgnupFlow {
+            currentState = .loggedOut
+        }
+        else {
+            currentState = hasCompletedOnboarding ? .signup : .onboarding
+        }
     }
 }
