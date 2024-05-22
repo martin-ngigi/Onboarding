@@ -31,6 +31,7 @@ struct AgeView: View {
                     .foregroundColor(.white)
                 
                 Slider(value: $age, in: 10...100, step: 1)
+                    .tint(.white)
                     .padding()
             }
             

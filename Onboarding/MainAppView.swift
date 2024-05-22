@@ -26,6 +26,10 @@ struct MainAppView: View {
                     session.completeOnboarding()
                 }
                     .transition(.asymmetric(insertion: .opacity, removal: .move(edge: .leading)))
+            case .signup:
+                SignupView()
+                    .transition(.asymmetric(insertion: .move(edge: .trailing), removal: .opacity))
+
             default:
                 SplashView()
             }

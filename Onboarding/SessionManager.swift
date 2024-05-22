@@ -17,6 +17,7 @@ final class SessionManager: ObservableObject {
         case loggedIn
         case loggedOut
         case onboarding
+        case signup
     }
     
     @Published private(set) var currentState: CurrentState?
@@ -30,7 +31,7 @@ final class SessionManager: ObservableObject {
     }
     
     func completeOnboarding() {
-        currentState = .loggedOut
+        currentState = .signup
         UserDefaults.standard.set(true, forKey: UserDefaultKeys.hasSessionOnboarding)
     }
     
