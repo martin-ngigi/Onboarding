@@ -16,6 +16,10 @@ final class RegistrationManager: ObservableObject {
     
     
     @Published var active: Screen = Screen.allCases.first!
+    @Published var user = User(username: "", age: 0, bio: "")
+    
+    @Published var hasError = false
+    @Published var error: RegistrationError?
     
     func next() {
         let nextScreenIndex = min(active.rawValue+1, Screen.allCases.last!.rawValue)
@@ -28,6 +32,40 @@ final class RegistrationManager: ObservableObject {
         let previousScreenIndex = max(active.rawValue-1, Screen.allCases.first!.rawValue)
         if let screen = Screen(rawValue: previousScreenIndex) {
             active = screen
+        }
+    }
+   
+    func validateUsername() {
+        hasError = user.username.isEmpty
+        error = user.username.isEmpty ? .emptyUsername : nil
+    }
+    
+    func validateBio() {
+        hasError = user.bio.isEmpty
+        error = user.bio.isEmpty ? .emptyBio : nil
+    }
+}
+
+extension RegistrationManager {
+    struct User {
+        var username: String
+        var age: Double
+        var bio: String
+    }
+}
+
+extension RegistrationManager {
+    enum RegistrationError: LocalizedError {
+        case emptyUsername
+        case emptyBio
+        
+        var errorDescription: String? {
+            switch self {
+            case .emptyUsername:
+                "⚠️ Username is empty"
+            case .emptyBio:
+                "⚠️ Bio is empty"
+            }
         }
     }
 }

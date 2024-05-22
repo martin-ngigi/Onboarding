@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct UsernameView: View {
+    @Binding var text: String
     let action: () -> Void
     
     var body: some View {
@@ -21,7 +22,7 @@ struct UsernameView: View {
                               design: .rounded))
                 .foregroundStyle(.white)
             
-            TextField("Please enter a username", text: .constant(""))
+            TextField("Please enter a username", text: $text)
                 .primaryTextModifier()
             
             Button("Next") {
@@ -34,7 +35,7 @@ struct UsernameView: View {
 }
 
 #Preview {
-    UsernameView{}
+    UsernameView(text: .constant("")){}
         .padding()
         .previewLayout(.sizeThatFits)
         .background(.blue)

@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct BioView: View {
+    @Binding var text: String
+
     let action: () -> Void
     var body: some View {
         VStack {
@@ -20,7 +22,7 @@ struct BioView: View {
                               design: .rounded))
                 .foregroundStyle(.white)
             
-            TextEditor(text: .constant(""))
+            TextEditor(text: $text)
                 .clipShape(RoundedRectangle(cornerRadius: 10, style: /*@START_MENU_TOKEN@*/.continuous/*@END_MENU_TOKEN@*/))
             
             Button("Register") {
@@ -34,7 +36,7 @@ struct BioView: View {
 }
 
 #Preview {
-    BioView{}
+    BioView(text: .constant("")){}
         .padding()
         .previewLayout(.sizeThatFits)
         .background(.blue)

@@ -17,13 +17,23 @@ struct SignupView: View {
             
             TabView(selection: $manager.active) {
                 
-                UsernameView(action: manager.next)
-                    .tag(RegistrationManager.Screen.username)
+                UsernameView(text: $manager.user.username){
+                    manager.validateUsername()
+                    if !manager.hasError {
+                        manager.next()
+                    }
+                }
+                .tag(RegistrationManager.Screen.username)
                 
-                AgeView(action: manager.next)
+                AgeView(age: $manager.user.age, action: manager.next)
                     .tag(RegistrationManager.Screen.age)
 
-                BioView(action: manager.next)
+                BioView(text:  $manager.user.bio){
+                    manager.validateBio()
+                    if !manager.hasError {
+                        //TODO: handle registration
+                    }
+                }
                     .tag(RegistrationManager.Screen.bio)
 
             }
@@ -63,6 +73,9 @@ struct SignupView: View {
             else {
                 showPrevBtn = true
             }
+            
+        }
+        .alert(isPresented: $manager.hasError, error: manager.error) {
             
         }
     }

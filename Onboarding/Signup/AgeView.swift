@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct AgeView: View {
+    
+    @Binding var age: Double
+    
     let action: () -> Void
     var body: some View {
         VStack {
@@ -21,13 +24,13 @@ struct AgeView: View {
                 .foregroundStyle(.white)
             
             VStack{
-                Text("1yr")
+                Text("\(Int(age))yr")
                     .font(.system(size: 20,
                                   weight: .regular,
                                   design: .rounded))
                     .foregroundColor(.white)
                 
-                Slider(value: .constant(0), in: 10...100, step: 1)
+                Slider(value: $age, in: 10...100, step: 1)
                     .padding()
             }
             
@@ -41,7 +44,7 @@ struct AgeView: View {
 }
 
 #Preview {
-    AgeView{}
+    AgeView(age: .constant(19)){}
         .padding()
         .previewLayout(.sizeThatFits)
         .background(.blue)
