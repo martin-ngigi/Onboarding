@@ -18,6 +18,7 @@
 		A356D1C52BFE2869000AE7FE /* OnboardingInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A356D1C42BFE2869000AE7FE /* OnboardingInfoView.swift */; };
 		A356D1C72BFE2A22000AE7FE /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A356D1C62BFE2A22000AE7FE /* OnboardingView.swift */; };
 		A356D1C92BFE2B4A000AE7FE /* OnboardingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A356D1C82BFE2B4A000AE7FE /* OnboardingManager.swift */; };
+		A356D1CB2BFE38D0000AE7FE /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A356D1CA2BFE38D0000AE7FE /* SplashView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		A356D1C42BFE2869000AE7FE /* OnboardingInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingInfoView.swift; sourceTree = "<group>"; };
 		A356D1C62BFE2A22000AE7FE /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		A356D1C82BFE2B4A000AE7FE /* OnboardingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingManager.swift; sourceTree = "<group>"; };
+		A356D1CA2BFE38D0000AE7FE /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				A356D1C02BFE267B000AE7FE /* MainAppView.swift */,
 				A356D1C62BFE2A22000AE7FE /* OnboardingView.swift */,
 				A356D1C82BFE2B4A000AE7FE /* OnboardingManager.swift */,
+				A356D1CA2BFE38D0000AE7FE /* SplashView.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 				A356D1BF2BFE23C3000AE7FE /* SessionManager.swift in Sources */,
 				A356D1C72BFE2A22000AE7FE /* OnboardingView.swift in Sources */,
 				A356D1C92BFE2B4A000AE7FE /* OnboardingManager.swift in Sources */,
+				A356D1CB2BFE38D0000AE7FE /* SplashView.swift in Sources */,
 				A356D1C52BFE2869000AE7FE /* OnboardingInfoView.swift in Sources */,
 				A356D1AD2BFE1C7C000AE7FE /* OnboardingApp.swift in Sources */,
 			);

@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct OnboardingView: View {
+    let action: () -> Void
     
     @StateObject private var manager = OnboardingManager()
     @State private var showBtn = false
@@ -32,8 +33,7 @@ struct OnboardingView: View {
                             .overlay(alignment: .bottom) {
                                 if showBtn {
                                     Button("Continue") {
-//                                        withAnimation {
-//                                        }
+                                        action()
                                     }
                                     .padding()
                                     .frame(width: 350, height: 50)
@@ -58,5 +58,5 @@ struct OnboardingView: View {
 }
 
 #Preview {
-    OnboardingView()
+    OnboardingView{}
 }

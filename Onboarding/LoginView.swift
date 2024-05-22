@@ -68,9 +68,7 @@ private extension LoginView {
     
     var login: some View {
         Button("Login") {
-            withAnimation {
-                session.signIn()
-            }
+            session.signIn()
         }
         .padding()
         .frame(width: 350, height: 50)

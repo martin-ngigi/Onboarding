@@ -19,9 +19,7 @@ struct HomeView: View {
                               design: .rounded))
             
             Button("Sign out") {
-                withAnimation {
-                    session.signOut()
-                }
+                session.signOut()
             }
             .buttonStyle(.borderedProminent)
             .controlSize(.large)
