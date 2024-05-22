@@ -28,6 +28,7 @@
 		A356D1DB2BFE6A34000AE7FE /* BioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A356D1DA2BFE6A34000AE7FE /* BioView.swift */; };
 		A356D1DE2BFE6EC3000AE7FE /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A356D1DD2BFE6EC3000AE7FE /* SignupView.swift */; };
 		A356D1E02BFE6FD7000AE7FE /* RegistrationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A356D1DF2BFE6FD7000AE7FE /* RegistrationManager.swift */; };
+		A356D1E22BFE9995000AE7FE /* TermsAgreementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A356D1E12BFE9995000AE7FE /* TermsAgreementView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		A356D1DA2BFE6A34000AE7FE /* BioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioView.swift; sourceTree = "<group>"; };
 		A356D1DD2BFE6EC3000AE7FE /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		A356D1DF2BFE6FD7000AE7FE /* RegistrationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationManager.swift; sourceTree = "<group>"; };
+		A356D1E12BFE9995000AE7FE /* TermsAgreementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAgreementView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				A356D1C62BFE2A22000AE7FE /* OnboardingView.swift */,
 				A356D1C82BFE2B4A000AE7FE /* OnboardingManager.swift */,
 				A356D1CA2BFE38D0000AE7FE /* SplashView.swift */,
+				A356D1E12BFE9995000AE7FE /* TermsAgreementView.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 				A356D1BB2BFE1D34000AE7FE /* HomeView.swift in Sources */,
 				A356D1C12BFE267B000AE7FE /* MainAppView.swift in Sources */,
 				A356D1D32BFE43CF000AE7FE /* PrimaryTextModifier.swift in Sources */,
+				A356D1E22BFE9995000AE7FE /* TermsAgreementView.swift in Sources */,
 				A356D1AF2BFE1C7C000AE7FE /* ContentView.swift in Sources */,
 				A356D1CF2BFE42BE000AE7FE /* CustomButtonView.swift in Sources */,
 				A356D1BD2BFE1DF9000AE7FE /* LoginView.swift in Sources */,

@@ -10,10 +10,12 @@ import SwiftUI
 @main
 struct OnboardingApp: App {
     
+    @StateObject private var session =  SessionManager()
     
     var body: some Scene {
         WindowGroup {
             MainAppView()
+                .environmentObject(session)
         }
     }
 }

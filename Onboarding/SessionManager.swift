@@ -30,6 +30,10 @@ final class SessionManager: ObservableObject {
         currentState = .loggedOut
     }
     
+    func register() {
+        signIn()
+    }
+    
     func completeOnboarding() {
         currentState = .signup
         UserDefaults.standard.set(true, forKey: UserDefaultKeys.hasSessionOnboarding)

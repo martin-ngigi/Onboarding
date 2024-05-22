@@ -8,18 +8,16 @@
 import SwiftUI
 
 struct MainAppView: View {
-    @StateObject private var session = SessionManager()
+    @EnvironmentObject var session: SessionManager
 
     var body: some View {
         ZStack {
             switch session.currentState {
             case .loggedIn:
                 HomeView()
-                    .environmentObject(session)
                     .transition(.opacity)
             case .loggedOut:
                 LoginView()
-                    .environmentObject(session)
                     .transition(.opacity)
             case .onboarding:
                 OnboardingView{

@@ -8,8 +8,11 @@
 import SwiftUI
 
 struct SignupView: View {
+    @EnvironmentObject var session: SessionManager
     @StateObject private var manager = RegistrationManager()
     @State private var showPrevBtn = false
+    @State private var showTerms = false
+    @State private var isRegistering = false
     
     var body: some View {
         ZStack{
@@ -31,7 +34,7 @@ struct SignupView: View {
                 BioView(text:  $manager.user.bio){
                     manager.validateBio()
                     if !manager.hasError {
-                        //TODO: handle registration
+                        showTerms.toggle()
                     }
                 }
                     .tag(RegistrationManager.Screen.bio)
@@ -78,9 +81,32 @@ struct SignupView: View {
         .alert(isPresented: $manager.hasError, error: manager.error) {
             
         }
+        .sheet(isPresented: $showTerms) {
+            TermsAgreementView {
+                //MARK: Handle registering
+                isRegistering = true
+                
+                // mock loading
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+                    isRegistering = false
+                    session.register()
+                }
+            }
+            .overlay {
+                if isRegistering {
+                    Color.black.opacity(0.4).ignoresSafeArea()
+                    
+                    ProgressView()
+                        .tint(.white)
+                }
+            }
+            .interactiveDismissDisabled()// Dont dismiss sheet
+            .animation(.easeInOut, value: isRegistering)
+        }
     }
 }
 
 #Preview {
     SignupView()
+        .environmentObject(SessionManager())
 }
