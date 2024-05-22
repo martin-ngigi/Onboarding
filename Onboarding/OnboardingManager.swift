@@ -14,6 +14,8 @@ struct OnboardingItem: Identifiable {
     let content: String
 }
 
+extension OnboardingItem: Equatable {}
+
 
 final class OnboardingManager: ObservableObject {
     @Published private(set) var items: [OnboardingItem] = []
@@ -22,7 +24,8 @@ final class OnboardingManager: ObservableObject {
         items = [
             .init(emoji: "🤝", title: "Join the crew", content: "Handshake. Two hands performing a handshake gesture, indicating a cordial greeting between friends or associates. "),
             .init(emoji: "❤️", title: "Support the crew", content: "A classic red love heart emoji. The red heart ideograph is traditionally used for expressions of love and romance across many cultures."),
-            .init(emoji: "🥳", title: "Celebrate the crew", content: "Celebrate the crew and congratulation for joining the crew")
+            .init(emoji: "🥳", title: "Celebrate the crew", content: "Celebrate the crew and congratulation for joining the crew"),
+            .init(emoji: "👨‍🎓", title: "Eduction", content: "Eduction is the key to success and prosperity and so are we."),
         ]
     }
 }
