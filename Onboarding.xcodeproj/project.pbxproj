@@ -13,6 +13,8 @@
 		A356D1B42BFE1C80000AE7FE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A356D1B32BFE1C80000AE7FE /* Preview Assets.xcassets */; };
 		A356D1BB2BFE1D34000AE7FE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A356D1BA2BFE1D34000AE7FE /* HomeView.swift */; };
 		A356D1BD2BFE1DF9000AE7FE /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A356D1BC2BFE1DF8000AE7FE /* LoginView.swift */; };
+		A356D1BF2BFE23C3000AE7FE /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A356D1BE2BFE23C3000AE7FE /* SessionManager.swift */; };
+		A356D1C12BFE267B000AE7FE /* MainAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A356D1C02BFE267B000AE7FE /* MainAppView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		A356D1B32BFE1C80000AE7FE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A356D1BA2BFE1D34000AE7FE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		A356D1BC2BFE1DF8000AE7FE /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		A356D1BE2BFE23C3000AE7FE /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		A356D1C02BFE267B000AE7FE /* MainAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAppView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,8 @@
 				A356D1B22BFE1C80000AE7FE /* Preview Content */,
 				A356D1BA2BFE1D34000AE7FE /* HomeView.swift */,
 				A356D1BC2BFE1DF8000AE7FE /* LoginView.swift */,
+				A356D1BE2BFE23C3000AE7FE /* SessionManager.swift */,
+				A356D1C02BFE267B000AE7FE /* MainAppView.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -144,8 +150,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A356D1BB2BFE1D34000AE7FE /* HomeView.swift in Sources */,
+				A356D1C12BFE267B000AE7FE /* MainAppView.swift in Sources */,
 				A356D1AF2BFE1C7C000AE7FE /* ContentView.swift in Sources */,
 				A356D1BD2BFE1DF9000AE7FE /* LoginView.swift in Sources */,
+				A356D1BF2BFE23C3000AE7FE /* SessionManager.swift in Sources */,
 				A356D1AD2BFE1C7C000AE7FE /* OnboardingApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

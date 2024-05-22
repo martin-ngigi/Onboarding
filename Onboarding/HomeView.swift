@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct HomeView: View {
+    
+    @EnvironmentObject var session: SessionManager
+    
     var body: some View {
         VStack(spacing: 16){
             Text("Hello")
@@ -16,7 +19,9 @@ struct HomeView: View {
                               design: .rounded))
             
             Button("Sign out") {
-                
+                withAnimation {
+                    session.signOut()
+                }
             }
             .buttonStyle(.borderedProminent)
             .controlSize(.large)
@@ -26,4 +31,5 @@ struct HomeView: View {
 
 #Preview {
     HomeView()
+        .environmentObject( SessionManager())
 }

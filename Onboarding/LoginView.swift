@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct LoginView: View {
+    
+    @EnvironmentObject var session: SessionManager
+    
     var body: some View {
         ZStack {
             Color.blue.ignoresSafeArea()
@@ -65,7 +68,9 @@ private extension LoginView {
     
     var login: some View {
         Button("Login") {
-            
+            withAnimation {
+                session.signIn()
+            }
         }
         .padding()
         .frame(width: 350, height: 50)
@@ -79,4 +84,5 @@ private extension LoginView {
 
 #Preview {
     LoginView()
+        .environmentObject( SessionManager())
 }
