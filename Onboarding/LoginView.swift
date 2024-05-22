@@ -50,32 +50,20 @@ private extension LoginView {
     
     var username: some View {
         TextField("Username", text: .constant(""))
-            .padding()
-            .frame(width: 350, height: 50)
-            .background( in: RoundedRectangle(cornerRadius: 10, style: /*@START_MENU_TOKEN@*/.continuous/*@END_MENU_TOKEN@*/))
-            .font(.system(size: 13, weight: .bold, design: .rounded))
-            .padding(.bottom, 8)
+            .primaryTextModifier()
     }
     
     var password: some View {
         SecureField("Password", text: .constant(""))
-            .padding()
-            .frame(width: 350, height: 50)
-            .background( in: RoundedRectangle(cornerRadius: 10, style: /*@START_MENU_TOKEN@*/.continuous/*@END_MENU_TOKEN@*/))
-            .font(.system(size: 13, weight: .bold, design: .rounded))
-            .padding(.bottom, 8)
+            .primaryTextModifier()
     }
     
     var login: some View {
         Button("Login") {
             session.signIn()
         }
-        .padding()
-        .frame(width: 350, height: 50)
-        .font(.system(size: 20, weight: .bold, design: .rounded))
-        .background( in: RoundedRectangle(cornerRadius: 10, style: /*@START_MENU_TOKEN@*/.continuous/*@END_MENU_TOKEN@*/))
+        .secondaryButtonModifier()
         .padding(.top, 40)
-
 
     }
 }
